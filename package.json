@@ -1,0 +1,24 @@
+{
+    "name": "pakeplus-ios",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "pp:worker": "node ./scripts/ppworker.cjs",
+        "restore": "git restore .",
+        "icon": "appicon app-icon.png --output-path ./PakePlus/Assets.xcassets/AppIcon.appiconset",
+        "merge:main": "git checkout main && git merge web3 && git push",
+        "build:ipa": "make package FINALPACKAGE=1 PACKAGE_FORMAT=ipa"
+    },
+    "keywords": [
+        "pakeplus",
+        "pakeplus-android"
+    ],
+    "author": "1024小神",
+    "license": "ISC",
+    "dependencies": {
+        "commander": "^13.1.0",
+        "fs-extra": "^11.3.0",
+        "sharp": "^0.34.1"
+    }
+}
