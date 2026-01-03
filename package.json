@@ -1,0 +1,10 @@
+{
+    "name": "pakeplus-ios",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "build": "vite",
+        "icon": "appicon pakeplus.png --output-path ./PakePlus/Assets.xcassets/AppIcon.appiconset"
+    }
+}
